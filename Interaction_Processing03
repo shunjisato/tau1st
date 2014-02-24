@@ -1,0 +1,62 @@
+void chara(int a, int b) {
+  pushMatrix() ;
+
+  translate(a, b) ; 
+
+  fill(0);
+
+  triangle(30, 85, 40, 60, 86, 85);
+
+  ellipse(40, 50, 50, 50);
+  //kutibasi
+  fill(251, 255, 59);
+  ellipse(40, 55, 10, 20);
+
+ if (mousePressed) {
+    background(x, 50, y);
+  }
+  //me
+  fill(250);
+  ellipse(60, 35, x/22, y/22);
+  ellipse(20, 35, x/22, y/22) ;
+
+
+  fill(250, 3, 23);
+  ellipse(17, 34, 2, 2);
+  ellipse(62, 33, 2, 2);
+
+
+  strokeWeight(5);
+  line(30, 40, 40, 10);
+  line(50, 40, 40, 10);
+
+  strokeWeight(2);
+  fill(250);
+  line(28, 58, 52, 58);
+  line(65, 83, 84, 70);
+
+  ellipse(84, 70, x/30, x/30);
+
+  line(40, 85, 40, 95);
+  if (mousePressed) {
+    line(40, 85, 40, x);
+    line(50, 85, 50, x);
+    line(60, 85, 60, x);
+    line(70, 85, 70, x);
+  }
+  line(50, 85, 50, 95);
+  line(60, 85, 60, 95);
+  line(70, 85, 70, 95);
+
+
+
+  //asi saki
+  line(37, 95, 40, 95);
+  line(47, 95, 50, 95);
+  line(57, 95, 60, 95);
+  line(67, 95, 70, 95);
+
+
+
+  popMatrix() ;
+}
